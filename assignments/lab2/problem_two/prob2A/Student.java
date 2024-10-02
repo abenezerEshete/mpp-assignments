@@ -1,3 +1,4 @@
+package prob2A;
 
 //Student "has" the 1-1 relationship with GradeReport: Student is the owner of this relationship
 public class Student {

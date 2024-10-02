@@ -1,3 +1,4 @@
+package prob2A.outsidepackage;
 
 import prob2A.Student;
 import prob2A.GradeReport;

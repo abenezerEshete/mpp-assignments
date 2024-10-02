@@ -1,3 +1,4 @@
+package prob2A;
 
 public class Grade {
     //data member
@@ -11,7 +12,7 @@ public class Grade {
     public Integer getScore() {
         return score;
     }
-    //print scores
+    //To print scores in format
     @Override
     public String toString() {
         return String.valueOf(score);
