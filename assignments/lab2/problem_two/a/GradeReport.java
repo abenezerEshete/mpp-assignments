@@ -1,4 +1,3 @@
-package prob2A;
 
 import java.util.*;
 

@@ -8,11 +8,9 @@ public class Main {
 
         OrderAndOrderLine orderManager = new OrderAndOrderLine();
 
-        // Create an first OrderLine for the order
         OrderLine firstOrderLine = new OrderLine(1, 29.99, 2, null); // Placeholder for the order reference
 
-        // Create an order with at least one OrderLine
-        Order order = orderManager.createOrder("Order001", LocalDate.now(), firstOrderLine);
+        Order order = orderManager.createOrder("Order01", LocalDate.now(), firstOrderLine);
 
         // Set the order reference
        firstOrderLine = new OrderLine(1, 29.99, 2, order);

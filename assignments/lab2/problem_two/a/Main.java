@@ -1,4 +1,3 @@
-package prob2A.extpackage;
 
 import prob2A.Student;
 import prob2A.GradeReport;

@@ -1,4 +1,3 @@
-package prob2A;
 
 public class Grade {
     //data member
