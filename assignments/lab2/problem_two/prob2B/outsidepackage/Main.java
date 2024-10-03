@@ -1,4 +1,4 @@
-package Twob.outsidepackage;//package Twob.outsidepackage
+package prob2B.outsidepackage;//package Twob.outsidepackage
 
 import java.time.LocalDate;
 import Twob.Order;
