@@ -1,4 +1,4 @@
-package BiDirecional.BidirectionalOnetoOne.prob2A;
+package prob2A;
 
 public class Student {
 

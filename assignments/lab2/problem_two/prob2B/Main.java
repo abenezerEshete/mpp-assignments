@@ -1,4 +1,4 @@
-package Twob;
+package prob2B;
 
 import java.time.LocalDate;
 

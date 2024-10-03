@@ -1,4 +1,4 @@
-package BiDirecional.BidirectionalOnetoOne.prob2A.outsidepackage;
+package prob2A.outsidepackage;
 
 import BiDirecional.BidirectionalOnetoOne.prob2A.Student;
 
