@@ -1,19 +1,17 @@
-package prob2A.outsidepackage;
+package BiDirecional.BidirectionalOnetoOne.prob2A.outsidepackage;
 
-import prob2A.Student;
-import prob2A.GradeReport;
-import prob2A.Grade;
+import BiDirecional.BidirectionalOnetoOne.prob2A.Student;
 
 public class Main {
-    public static void main(String[] args) {
-        Student pupil = new Student("Hewitt");
-        pupil.getGrades().addGrades(new Grade(100));
-        pupil.getGrades().addGrades(new Grade(95));
-        pupil.getGrades().addGrades(new Grade(98));
-        System.out.println("Hewitt's scores are: " + pupil.getGrades().getGradesList());
 
-        //to show that its bidirectional
-        GradeReport grades = pupil.getGrades();
-        System.out.println("The above grades belong to: " + grades.getStudent());
+    public static void main(String[] args) {
+        Student student = new Student("Sandra","A+");
+
+        student.getGradeReport().getGrade();
+
+
+        System.out.println("Student grade is:  " +student.getGradeReport().getGrade());
+        System.out.println("Grades belong to : " +student.getName());
+
     }
 }

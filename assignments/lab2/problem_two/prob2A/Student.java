@@ -1,27 +1,21 @@
-package prob2A;
+package BiDirecional.BidirectionalOnetoOne.prob2A;
 
-//Student "has" the 1-1 relationship with GradeReport: Student is the owner of this relationship
 public class Student {
-    private String name;
-    private GradeReport grades;
 
-    public Student(String name){
+    private String name;
+    private GradeReport gradeReport;
+
+
+    public Student(String name, String grade){
         this.name = name;
-        //initialize the object of Gradereport to maintain the 1-1 relationship
-        grades = new GradeReport(this);
+        this.gradeReport = new GradeReport(grade,this);
+    }
+
+    public GradeReport getGradeReport(){
+        return gradeReport;
     }
 
     public String getName(){
         return name;
     }
-
-    public GradeReport getGrades(){
-        return grades;
-    }
-
-    @Override
-    public String toString(){
-        return name;
-    }
-
 }
