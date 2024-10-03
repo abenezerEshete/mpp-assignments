@@ -1,4 +1,4 @@
-package prob2B;
+package Twob;
 
 public class OrderLine {
 
@@ -7,6 +7,7 @@ public class OrderLine {
     private int qty;
     private Order order;
 
+    // Default access constructor for OrderLine
     OrderLine(int orderLineNum, double price, int qty, Order order) {
         this.orderLineNum = orderLineNum;
         this.price = price;
@@ -30,6 +31,3 @@ public class OrderLine {
         return order;
     }
 }
-
-
-

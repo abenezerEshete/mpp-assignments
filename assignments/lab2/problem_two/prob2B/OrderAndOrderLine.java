@@ -1,9 +1,9 @@
-package prob2B;
+package Twob;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-
+//factory class
 public class OrderAndOrderLine {
 
     private List<Order> orders;
@@ -12,16 +12,16 @@ public class OrderAndOrderLine {
         this.orders = new ArrayList<>();
     }
 
-    public Order createOrder(String name, LocalDate date, OrderLine firstOrderLine) {
-        Order order = new Order(name, date, firstOrderLine);
-        orders.add(order);
-        return order;
+    public Order createOrder(String name, LocalDate date) {
+        Order order = new Order(name, date); // Create a new Order
+        orders.add(order); // Add the Order to the list of orders
+        return order; // Return the created Order
     }
 
     public OrderLine createOrderLine(int orderLineNum, double price, int qty, Order order) {
-        OrderLine orderLine = new OrderLine(orderLineNum, price, qty, order); // Create a new order line
-        order.addOrderLine(orderLine);
-        return orderLine;
+        OrderLine orderLine = new OrderLine(orderLineNum, price, qty, order); // Create a new OrderLine
+        order.addOrderLine(orderLine); // Add the OrderLine to the Order
+        return orderLine; // Return the created OrderLine
     }
 
     public void displayOrders() {
@@ -35,5 +35,7 @@ public class OrderAndOrderLine {
         }
     }
 }
+
+
 
 
