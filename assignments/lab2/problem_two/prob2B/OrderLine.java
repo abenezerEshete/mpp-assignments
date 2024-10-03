@@ -7,7 +7,7 @@ public class OrderLine {
     private int qty;
     private Order order;
 
-    public OrderLine(int orderLineNum, double price, int qty, Order order) {
+    OrderLine(int orderLineNum, double price, int qty, Order order) {
         this.orderLineNum = orderLineNum;
         this.price = price;
         this.qty = qty;
