@@ -1,6 +1,7 @@
 package prob2A.outsidepackage;
 
-import BiDirecional.BidirectionalOnetoOne.prob2A.Student;
+import prob2A.Student;
+import prob2A.GradeReport;
 
 public class Main {
 
