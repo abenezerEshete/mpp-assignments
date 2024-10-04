@@ -1,0 +1,13 @@
+The reason it returns different result
+p1.equals(p2):
+o	p1 is a PersonWithJob, and p2 is a Person.
+o	When p1.equals(p2) is called, the equals method of PersonWithJob is used because p1 is an instance of PersonWithJob.
+o	This method checks if p2 is a PersonWithJob. Since p2 is just a Person (not a PersonWithJob), it returns false.
+o	This means instanceOf only checks if an object is of a specific class or one of its parent classes in the inheritance hierarchy. Since P2 is an instance of the Person class and P1 is from the PersonWithJob class, the instanceOf check will return false.
+
+
+p2.equals(p1):
+o	Here, the equals method of Person is used because p2 is an instance of Person.
+o	This method only checks if the names are equal, and since both p1 and p2 have the same name ("Joe"), it returns true.
+
+
