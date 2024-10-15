@@ -74,8 +74,6 @@ public static void main(String args[]){
     /* Query 2 : Create an object for the Type of Human class by choosing suitable Interface for the three  constructors using ClassName::new. 
                  Then print the object status */
 
-	Human newH = new Human("sandie");
-
 	Function<String,Human> exp1 = Human::new;
 	BiFunction<String,Integer,Human>  exp2 = Human::new;
 	Human.TriFunction<String,Integer,String,Human> exp3 = Human::new;
